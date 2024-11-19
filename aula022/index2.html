@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-ao">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Modelo de Caixas</title>
+
+    <style>
+        body{
+            font: normal 1em Arial;
+            background-image: linear-gradient(to right,red,yellow);
+        }
+        p{
+            font-size: 1.3em;
+            text-align: justify;
+            width: 500px;
+            height: 50px;
+            margin: auto;
+        }
+        h1{
+            background-color: lightgray;
+            width: 500px;
+            height: 50px;
+            padding: 100px;
+            text-align: center;
+            /*Aqui personalizei a borda para dashed o que é bastante insteressante!*/
+            border: 5px dashed black;
+            border-radius: 20px;
+            margin: auto;
+            margin-top: 5%;
+            margin-bottom: 5%;
+            
+        }
+        h1:hover{
+            color: green;
+            background-color: rgb(248, 237, 109);
+            border: 5px solid green;
+        }
+        a{
+            border: 2px dashed red;
+            text-decoration: none;
+            border-radius: 5px;
+            padding: 2px 5px;
+            /*Isto dará um espaçamento na altura da linha do link em relação ao texto acima dele(do link)*/
+            line-height: 2;
+            
+        }
+        a:visited{
+            color: green;
+        }
+        a:hover{
+            color: rgb(160, 0, 0);
+            border: 2px solid rgb(97, 0, 157);
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de Caixa de box-level</h1>
+    <p>Parágrafos também são exemplos de box-level, mas os <a href="#"> links são exemplos de caixas inline-level</a>. Vamos ver como tudo isso funciona.</p>
+</body>
+</html>
